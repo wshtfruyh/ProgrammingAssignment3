@@ -7,7 +7,7 @@
 # hospitals without valid outcomes are excluded
 
 best <- function(state, outcome){
-        # read the outcome-of-care-mesaures.csv
+        # read the outcome data
         out <- read.csv("outcome-of-care-measures.csv")
         sort <- out[out$State == state, ]
         death <- c("heart failure", "heart attack", "pneumonia")
